@@ -282,6 +282,8 @@
 		36E9CD051DD6F0DE003597CE /* Resolver.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 360F392B1DD2068E002BED59 /* Resolver.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B2342114234EE60300CDA2B3 /* SOCKS5AuthAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2342113234EE60300CDA2B3 /* SOCKS5AuthAdapter.swift */; };
 		B2342116234EE61D00CDA2B3 /* UDPAssociateStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2342115234EE61D00CDA2B3 /* UDPAssociateStack.swift */; };
+		D45F3A3725776EC300DC2D4A /* GeoIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45F3A3625776EC300DC2D4A /* GeoIP.swift */; };
+		D45F3A3825776EC300DC2D4A /* GeoIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45F3A3625776EC300DC2D4A /* GeoIP.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -545,6 +547,7 @@
 		36E9CCFE1DD6EEF5003597CE /* QueueFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QueueFactory.swift; path = Tunnel/QueueFactory.swift; sourceTree = "<group>"; };
 		B2342113234EE60300CDA2B3 /* SOCKS5AuthAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SOCKS5AuthAdapter.swift; sourceTree = "<group>"; };
 		B2342115234EE61D00CDA2B3 /* UDPAssociateStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UDPAssociateStack.swift; sourceTree = "<group>"; };
+		D45F3A3625776EC300DC2D4A /* GeoIP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoIP.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -757,6 +760,7 @@
 		36463A321CDCD5EB0040579C /* src */ = {
 			isa = PBXGroup;
 			children = (
+				D45F3A3525776EC300DC2D4A /* GeoIP */,
 				36B8936C1E17F96000881890 /* ResponseGenerator */,
 				366EB5BE1CDE32BF00E0E942 /* Config */,
 				3650FAE01D27B9F300444E79 /* Crypto */,
@@ -1064,6 +1068,14 @@
 				36DB3CEE1E0D610500D907DB /* IPAddressSpec.swift */,
 			);
 			name = IP;
+			sourceTree = "<group>";
+		};
+		D45F3A3525776EC300DC2D4A /* GeoIP */ = {
+			isa = PBXGroup;
+			children = (
+				D45F3A3625776EC300DC2D4A /* GeoIP.swift */,
+			);
+			path = GeoIP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1443,6 +1455,7 @@
 				36C63E011D02BDEC00A00CA2 /* IPStackProtocol.swift in Sources */,
 				36B212341D54C30600C8AC0A /* HTTPStreamScanner.swift in Sources */,
 				366EB5C71CE033FB00E0E942 /* DomainListRule.swift in Sources */,
+				D45F3A3725776EC300DC2D4A /* GeoIP.swift in Sources */,
 				362950451D6AE2D0001A30F6 /* EventType.swift in Sources */,
 				36DB3CE71E0CD17100D907DB /* IPInterval.swift in Sources */,
 				366EB5AE1CDE0FCE00E0E942 /* HTTPAdapter.swift in Sources */,
@@ -1577,6 +1590,7 @@
 				362950491D6AE2E6001A30F6 /* ProxyServerEvent.swift in Sources */,
 				36C63DF71CFFDCAF00A00CA2 /* NWUDPSocket.swift in Sources */,
 				3650FAF81D27D64500444E79 /* MD5Hash.swift in Sources */,
+				D45F3A3825776EC300DC2D4A /* GeoIP.swift in Sources */,
 				36D591BF1D6C40F2003E92B2 /* IPRange.swift in Sources */,
 				36D591C21D6C4895003E92B2 /* IPRangeListRule.swift in Sources */,
 				3650FAF21D27C8CB00444E79 /* CryptoEnum.swift in Sources */,
